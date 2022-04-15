@@ -3,18 +3,16 @@ package Chapter2;
 public class StudentTest {
 
     public static void main(String[] args) {
+        Student studentNicolas = new Student(100, "Nicolas");
+        studentNicolas.setKorean("Korean", 80);
+        studentNicolas.setMath("Math", 70);
+        studentNicolas.setEnglish("English",100);
 
-        Student studentLee = new Student();
-        studentLee.studentName ="이순신";
-        studentLee.studentID = 100;
-        studentLee.address ="Seocho-dong, Seocho-gu, Seoul";
+        Student studentJin = new Student(101,"Jin");
+        studentJin.setKorean("Korean", 100);
+        studentJin.setMath("Math", 100);
+        studentJin.setEnglish("English", 100);
 
-        Student studentJin = new Student();
-        studentJin.studentName ="Jin Hye Joo";
-        studentJin.studentID = 150;
-        studentJin.address ="Gangnam-dong, Gangnam-gu, Seoul";
-
-        studentJin.showStudentInfo();
-        studentLee.showStudentInfo();
+        studentJin.showTotalScore();
     }
 }
