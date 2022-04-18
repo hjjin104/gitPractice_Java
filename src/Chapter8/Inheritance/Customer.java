@@ -1,32 +1,37 @@
 package Chapter8.Inheritance;
 
 public class Customer {
-    protected int customerID;
-    protected static int serialNum = 1000;
+
     protected String customerName;
+    protected int customerID;
+    protected static int serialnumber =1000;
     protected String customerGrade;
-    protected int bonusPoint;
-    protected double bonusRatio;
+    int bonusPoint;
+    protected double pointRate;
 
     public Customer(){
-        serialNum++;
-        customerID = serialNum;
+        serialnumber++;
+        customerID= serialnumber;
         customerGrade = "SILVER";
-        bonusPoint =0;
-        bonusRatio =0.01;
+        bonusPoint = 0;
+        pointRate = 0.1;
     }
 
-    public Customer(String customerName) {
-        this.customerName = customerName;
+    public Customer(String customerName){
+        this.customerName=customerName;
     }
 
-    public int calcPrice(int price){
-        bonusPoint += price * bonusRatio;
-        return price;
-    }
 
     public void showCustomerInfo(){
-        System.out.println(customerName+"님의 회원번호는 "+customerID+"이고 회원등급은 "+customerGrade+"이며, 현재 포인트는 "+bonusPoint+"원 입니다.");
+        System.out.println(customerName+"님의 회원번호는 "+customerID+"이고 회원등급은 "+customerGrade+"입니다. " +
+                customerName+"님의 포인트는 "+bonusPoint+"원입니다.");
+    }
+    public String getCustomerName() {
+        return customerName;
+    }
+
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
     }
 
     public int getCustomerID() {
@@ -35,14 +40,6 @@ public class Customer {
 
     public void setCustomerID(int customerID) {
         this.customerID = customerID;
-    }
-
-    public String getCustomerName() {
-        return customerName;
-    }
-
-    public void setCustomerName(String customerName) {
-        this.customerName = customerName;
     }
 
     public String getCustomerGrade() {
@@ -61,11 +58,16 @@ public class Customer {
         this.bonusPoint = bonusPoint;
     }
 
-    public double getBonusRatio() {
-        return bonusRatio;
+    public double getPointRate() {
+        return pointRate;
     }
 
-    public void setBonusRatio(double bonusRatio) {
-        this.bonusRatio = bonusRatio;
+    public void setPointRate(double pointRate) {
+        this.pointRate = pointRate;
+    }
+
+    public int getPoint(int price){
+        bonusPoint += price*pointRate;
+        return price;
     }
 }

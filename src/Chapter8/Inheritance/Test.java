@@ -6,8 +6,9 @@ public class Test {
         customerJin.setCustomerName("Jin");
         customerJin.showCustomerInfo();
 
-        Customer customerNicolas = new VipCustomer();
+        VipCustomer customerNicolas = new VipCustomer();
         customerNicolas.setCustomerName("Nicolas");
+        customerNicolas.setBonusPoint(10000);
         customerNicolas.showCustomerInfo();
 
     }
