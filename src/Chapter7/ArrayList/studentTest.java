@@ -9,7 +9,8 @@ public class studentTest {
         s1.addSubject("영어", 100);
         s1.showStudentScoreInfo();
         s1.showStudentInfo();
-        System.out.println("");
+        s1.showStudentAvg();
+        System.out.println("====================");
 
         Student s2 = new Student("Nicolas");
         s2.addSubject("국어", 60);
@@ -17,7 +18,7 @@ public class studentTest {
         s2.addSubject("영어", 100);
         s2.showStudentInfo();
         s2.showStudentScoreInfo();
-
+        s2.showStudentAvg();
 
     }
 }

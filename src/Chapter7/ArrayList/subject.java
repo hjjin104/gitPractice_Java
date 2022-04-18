@@ -1,6 +1,7 @@
 package Chapter7.ArrayList;
 
 public class subject {
+
     private String subjectName;
     private int scorePoint;
 
