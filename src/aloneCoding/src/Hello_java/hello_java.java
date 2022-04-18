@@ -6,7 +6,7 @@ public class hello_java {
         int num1=5;
         int num2=3;
 
-        int sum = add(num1,num2);
+        int sum = num1+num2;
         System.out.println(num1+"+"+num2+"="+sum);
     }
 }
