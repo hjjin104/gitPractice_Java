@@ -1,4 +1,4 @@
-package Hello_java;
+package aloneCoding.src.Hello_java;
 
 public class hello_java {
 

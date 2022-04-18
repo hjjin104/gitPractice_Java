@@ -1,4 +1,4 @@
-package singleton;
+package Chapter6.src.singleton;
 
 public class Company {
     private static Company instance = new Company();

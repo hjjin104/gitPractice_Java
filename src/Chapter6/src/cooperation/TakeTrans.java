@@ -1,4 +1,4 @@
-package cooperation;
+package Chapter6.src.cooperation;
 
 public class TakeTrans {
     public static void main(String[] args){

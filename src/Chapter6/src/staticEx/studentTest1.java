@@ -1,4 +1,4 @@
-package staticEx;
+package Chapter6.src.staticEx;
 
 public class studentTest1 {
     public static void main(String[] args){

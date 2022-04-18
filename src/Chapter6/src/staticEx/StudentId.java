@@ -1,4 +1,4 @@
-package staticEx;
+package Chapter6.src.staticEx;
 
 public class StudentId {
     static int serialNum = 10000;

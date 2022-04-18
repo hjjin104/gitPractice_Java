@@ -1,4 +1,4 @@
-package Thisex;
+package Chapter6.src.Thisex;
 
 class Person{
     String name;

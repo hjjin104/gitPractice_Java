@@ -1,4 +1,4 @@
-package singleton;
+package Chapter6.src.singleton;
 
 public class singletonTest {
     public static void main(String[] args){
