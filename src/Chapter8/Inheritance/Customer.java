@@ -9,16 +9,21 @@ public class Customer {
     int bonusPoint;
     protected double pointRate;
 
-    public Customer(){
-        serialnumber++;
-        customerID= serialnumber;
-        customerGrade = "SILVER";
-        bonusPoint = 0;
-        pointRate = 0.1;
-    }
+//    public Customer(){
+//        serialnumber++;
+//        customerID= serialnumber;
+//        customerGrade = "SILVER";
+//        bonusPoint = 0;
+//        pointRate = 0.1;
+//    }
 
     public Customer(String customerName){
         this.customerName=customerName;
+        serialnumber++;
+        customerID=serialnumber;
+        customerGrade="SILVER";
+        bonusPoint=0;
+        pointRate=0.1;
     }
 
 

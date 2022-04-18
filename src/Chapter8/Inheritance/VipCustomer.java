@@ -4,7 +4,9 @@ public class VipCustomer extends Customer {
     private double saleRate;
     private int agentId;
 
-    public VipCustomer(){
+    public VipCustomer(String customerName){
+        super(customerName);
+        this.customerName=customerName;
         customerGrade="VIP";
         pointRate = 0.05;
         saleRate = 0.1;
