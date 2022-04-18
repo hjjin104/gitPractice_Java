@@ -14,17 +14,18 @@ public class twoDimenstionArray {
             }
 //        }
 
-        char[][] alphabets = new char[13][2];
-        char ch ='A';
+            char[][] alphabets = new char[13][2];
+            char ch = 'A';
 
-        for (int i = 0; i < alphabets.length; i++) {
-            for (int j = 0; j < alphabets[i].length; j++) {
-                alphabets[i][j]=ch;
-                System.out.println(alphabets[i][j]);
-                ch++;
+            for (int z = 0; z < alphabets.length; z++) {
+                for (int j = 0; j < alphabets[i].length; j++) {
+                    alphabets[z][j] = ch;
+                    System.out.println(alphabets[z][j]);
+                    ch++;
+                }
+                System.out.println("");
+
             }
-            System.out.println("");
-
         }
     }
 }
