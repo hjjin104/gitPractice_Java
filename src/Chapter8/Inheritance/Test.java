@@ -10,5 +10,9 @@ public class Test {
         customerNicolas.setBonusPoint(10000);
         price = customerNicolas.calcPrice(20000);
         System.out.println("지불 금액은 "+price+"입니다. "+customerNicolas.showCustomerInfo());
+
+        goldCustomer customerKim = new goldCustomer("Kim");
+        int priceG = customerKim.calcPrice(15000);
+        System.out.println("지불 금액은 "+priceG+"입니다. "+customerKim.showCustomerInfo());
     }
 }
