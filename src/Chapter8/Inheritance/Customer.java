@@ -7,6 +7,8 @@ public class Customer {
     protected static int serialnumber =1000;
     protected String customerGrade;
     int bonusPoint;
+
+    int price;
     protected double pointRate;
 
 //    public Customer(){
@@ -23,12 +25,16 @@ public class Customer {
         customerID=serialnumber;
         customerGrade="SILVER";
         bonusPoint=0;
-        pointRate=0.1;
+        pointRate=0.01;
     }
 
+    public int calcPrice(int price){
+        bonusPoint += price*pointRate;
+        return price;
+    }
 
-    public void showCustomerInfo(){
-        System.out.println(customerName+"님의 회원번호는 "+customerID+"이고 회원등급은 "+customerGrade+"입니다. " +
+    public String showCustomerInfo(){
+        return (customerName+"님의 회원번호는 "+customerID+"이고 회원등급은 "+customerGrade+"입니다. " +
                 customerName+"님의 포인트는 "+bonusPoint+"원입니다.");
     }
     public String getCustomerName() {
