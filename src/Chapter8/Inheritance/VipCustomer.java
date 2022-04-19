@@ -19,6 +19,10 @@ public class VipCustomer extends Customer {
         return price;
     }
 
+    @Override
+    public String showCustomerInfo() {
+        return super.showCustomerInfo()+" "+ customerName+"님의 담당상담 직원은 "+agentId+"번 입니다.";
+    }
 
     public int getAgentId(){
         return agentId;
