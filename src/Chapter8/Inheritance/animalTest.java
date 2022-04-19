@@ -9,15 +9,25 @@ class Human extends Animal{
     public void move(){
         System.out.println("사람이 두발로 걷습니다");
     }
+    public void readingBook(){
+        System.out.println("사람이 책을 읽습니다.");
+    }
+
 }
 class Tiger extends Animal{
     public void move(){
         System.out.println("호랑이가 네발로 달립니다");
     }
+    public void hunting(){
+        System.out.println("호랑이는 사냥을 합니다.");
+    }
 }
 class Eagle extends Animal{
     public void move(){
         System.out.println("독수리가 하늘을 납니다");
+    }
+    public void flying(){
+        System.out.println("독수리가 날아갑니다.");
     }
 }
 
@@ -34,5 +44,19 @@ public class animalTest {
     }
     public void moveAnimal(Animal animal){
         animal.move();
+
+        if(animal instanceof Human){
+            Human human = (Human) animal; //downcasting
+            //Human human = new Human > create instance
+            human.readingBook();
+        }else if(animal instanceof Tiger){
+            Tiger tiger = (Tiger) animal;
+            tiger.hunting();
+        }else if(animal instanceof Eagle){
+            Eagle eagle = (Eagle) animal;
+            eagle.flying();
+        }else{
+            System.out.println("지원하지 않는 기능입니다.");
+        }
     }
 }
