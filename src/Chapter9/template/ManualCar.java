@@ -17,9 +17,11 @@ public class ManualCar extends Car {
     public void wiper(String status) {
         if (status == "비") {
             System.out.println("비가 와 사람이 와이퍼를 작동합니다.");
-        } else {
-            System.out.println("비가 오지 않아 와이퍼를 작동하지 않습니다.");
-
+        }else if(status=="눈"){
+            System.out.println("눈가 와 자동차가 스스로 와이퍼를 작동합니다.");
+        }
+        else{
+            System.out.println("비나 눈이 오지 않아 와이퍼를 작동하지 않습니다.");
         }
     }
 }
