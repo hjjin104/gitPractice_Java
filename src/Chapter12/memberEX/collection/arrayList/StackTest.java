@@ -16,6 +16,11 @@ class Mystack {
         }
         return arrayStack.remove(len-1);
     }
+
+    public String peek(int count){
+        int len = arrayStack.size()-1;
+        return arrayStack.get(len-count);
+    }
 }
 
 public class StackTest {
@@ -25,6 +30,10 @@ public class StackTest {
         stack.push("a");
         stack.push("b");
         stack.push("c");
+
+        System.out.println(stack.peek(0));
+        System.out.println(stack.peek(1));
+
 
         System.out.println(stack.pop());
         System.out.println(stack.pop());
