@@ -16,5 +16,6 @@ public class MemberArrayListTest {
         memberArrayList.showAll();
         memberArrayList.removeMember(101);
         memberArrayList.removeMember(104);
+        memberArrayList.showAll();
     }
 }
