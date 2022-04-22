@@ -20,10 +20,10 @@ public class MemberHashSetTest {
         memberHashSet.showAll();
         System.out.println();
 
-        memberHashSet.removeMember(1001);
-        memberHashSet.removeMember(1002);
-        memberHashSet.removeMember(1003);
-        memberHashSet.removeMember(1004);
-        memberHashSet.showAll();
+//        memberHashSet.removeMember(1001);
+//        memberHashSet.removeMember(1002);
+//        memberHashSet.removeMember(1003);
+//        memberHashSet.removeMember(1004);
+//        memberHashSet.showAll();
     }
 }

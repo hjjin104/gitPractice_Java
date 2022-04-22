@@ -34,7 +34,7 @@ public class MemberHashSet {
     public void showAll() {
 //        hashSet = new HashSet<Member>();
 //        for(Member h: hashSet){
-//            System.out.println(h);
+//            System.out.println(h); > Iterable한 객체가 아니기 때문에 print해도 나오지 않음
         Iterator<Member> iterator = hashSet.iterator();
         while(iterator.hasNext()){
             Member member = iterator.next();
