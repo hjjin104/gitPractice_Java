@@ -43,9 +43,16 @@ public class MemberArrayList {
     }
 
     public void showAll() {
-        for (Member m : arrayList) {
-            System.out.println(m);
+
+        Iterator<Member> iterator = arrayList.iterator();
+        while (iterator.hasNext()){
+            Member member = iterator.next();
+            System.out.println(member);
         }
+//
+//        for (Member m : arrayList) {
+//            System.out.println(m);
+//        }
         System.out.println();
     }
 }
