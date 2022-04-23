@@ -44,12 +44,12 @@ public class Member implements Comparable<Member>, Comparator<Member> {
         return member1.memberID-member2.memberID;
     }
 
-    @Override
+    @Override //같은 아이디 저장 불가
     public boolean equals(Object obj) {
         if (obj instanceof Member) {
             Member member = (Member) obj;
             if (this.memberID==member.memberID||this.memberName==member.memberName) {
-                System.out.println("This ID("+member.memberID+") already exist. Change to another one and try again.");
+                System.out.println("Your ID/Name is already exist. Please check it again.");
                 return true;
             } else return false;
         }
