@@ -9,7 +9,7 @@ class Outer{
         class myRunnalbe implements Runnable{
 
             @Override
-            public void run() {
+            public void run() {//지역변수들은 변화 불가!
                 System.out.println(outNum);
                 System.out.println(sNum);
                 System.out.println(localNum);
