@@ -53,8 +53,8 @@ class Outclass {
 
             //   Outclass.InClass inClass = outClass.new InClass();
 
-            Outclass.InStaticClass inStaticClass = new Outclass.InStaticClass();
-            inStaticClass.inTest();
+//            Outclass.InStaticClass inStaticClass = new Outclass.InStaticClass();
+//            inStaticClass.inTest();
         }
     }
 }
